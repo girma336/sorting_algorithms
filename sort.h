@@ -26,4 +26,7 @@ void print_array(const int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 int len_size(listint_t *list);
 void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+void quick_recursion(int *array, int start, int end, size_t size);
+int sort_pivot(int *array, int start, int end, size_t size);
 #endif
