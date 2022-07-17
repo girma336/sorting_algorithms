@@ -35,7 +35,7 @@ void counting_sort(int *array, size_t size)
 	for (m = 0; m < size; m++)
 	{
 		single[counting[array[m]] - 1] = array[m];
-		/*counting[array[m]]++;*/
+		counting[array[m]]--;
 	}
 	for (n = 0; n < size; n++)
 		array[n] = single[n];
