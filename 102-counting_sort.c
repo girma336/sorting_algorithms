@@ -8,7 +8,7 @@
 
 void counting_sort(int *array, size_t size)
 {
-	int *counting, l, *single, max, num;
+	int *counting, l, k, *single, max, num;
 	size_t i, j, m, n;
 
 	if (size < 2)
@@ -20,8 +20,8 @@ void counting_sort(int *array, size_t size)
 	counting = malloc(sizeof(size_t) * (max + 1));
 	single = malloc(sizeof(int) * size);
 
-	for (l = 0; l <= max; l++)
-		counting[l] = 0;
+	for (k = 0; k <= max; k++)
+		counting[k] = 0;
 	for (j = 0; j < size; j++)
 	{
 		num = array[j];
