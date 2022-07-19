@@ -33,7 +33,8 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void support_list(listint_t **list, listint_t **nw);
 void counting_sort(int *array, size_t size);
-void merge_re_sort(int *array, int *new_arr, size_t start, size_t mid, size_t end);
+void merge_re_sort(int *array, int *new_arr, size_t start,
+		   size_t mid, size_t end);
 void merge_sort(int *array, size_t size);
 void merge_recursion(int *array, int *new_arr, size_t start, size_t end);
 void heapify(int *array, size_t subt, size_t root, size_t size);
